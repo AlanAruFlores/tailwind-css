@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    /* Se va a reutilizar en el header, main,  footer */
+    .wrapper{
+        @apply flex h-20 w-[90%] mx-auto overflow-hidden max-w-7xl	
+    }
+    
+    /* Se va a reutilizar para los botones */
+    .button{
+        @apply block w-max py-2 px-4 rounded-full
+    }
+
+
+    /* Estilos de los numeros */
+    .number{
+        @apply bg-bright-red px-6 py-3 text-white font-semibold rounded-full
+    }
+
+    /*Estilos del fondo de los subtitulos*/
+    .subtitulo{
+        @apply bg-very-pale-red relative flex items-center rounded-l-full lg:bg-transparent
+    }
+
+    .grid-area-footer_desktop{
+        display: grid;
+        grid-template-areas:  "brand info search"
+        "brand info copy";
+    }
+}
